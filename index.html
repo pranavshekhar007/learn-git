@@ -1,0 +1,42 @@
+<!-- Create an HTML page with a container div that contains three child div elements. Each child div should have the text "Item 1", "Item 2", and "Item 3" respectively. The layout should adjust based on the screen width:
+When the screen width is 600px or more, the items should be displayed horizontally in a row.
+When the screen width is less than 600px, the items should be displayed vertically in a column. -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div>item 1</div>
+        <div>item 2</div>
+        <div>item 3</div>
+    </div>
+</body>
+</html> -->
+
+<!-- Create an HTML page with a button and an empty div. When the button is clicked, add a new paragraph with the text "Hello, World!" inside the div. -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <div class="container">
+        <button id="addButton"> Click Me</button>
+        <div class="context" id="contextDiv"></div>
+    </div>
+    <script>
+        document.getElementById('addButton').addEventListener('click', function() {
+            const newParagraph = document.createElement('p');
+            newParagraph.textContent = 'Hello, World!';
+            document.getElementById('contextDiv').appendChild(newParagraph);
+        });
+    </script>
+ </body>
+ </html>
